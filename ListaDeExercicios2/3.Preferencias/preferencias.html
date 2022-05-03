@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preferências</title>
+    <link rel="stylesheet" href="style.css/style.css">
+</head>
+<body>
+    <form name="Preferências" method="get" action="Cadastrar">
+       
+        <span><label for="idNome">Nome:</label></span>
+        <input type="text" name="nome" id="idNome"><br>
+        
+        <span><label for="idEmail">E-mail:</label></span>
+        <input type="text" name="email" id="idEmail"><br>
+
+        <fieldset>
+            <legend style="padding-top: 5px;">Preferências</legend>
+            <legend>Cor Favorita: </legend>
+            <select name="corFavorita" id="idCor"> 
+                <option selected disabled value="Escolha">Escolha</option>
+                <optgroup label="Cores">
+                <option value="Azul">Azul</option>
+                <option value="Preto">Preto</option>
+                <option value="Vermelho">Vermelho</option>
+                <option value="Verde">Verde</option>
+                <option value="Amarelo">Amarelo</option>
+                <option value="Branco">Branco</option></optgroup>
+            </select>
+
+            <legend>Manequim:</legend>
+            <label for="idPequeno"></label>
+            <input type="radio" name="manequim" id="idPequeno">Pequeno <br>
+            <label for="idMedio"></label>
+            <input type="radio" name="manequim" id="idMedio">Médio <br>
+            <label for="idGrande"></label>
+            <input type="radio" name="manequim" id="idGrande">Grande <br>
+            <label for="idExtraGrande"></label>
+            <input type="radio" name="manequim" id="idExtraGrande">ExtraGrande <br>
+
+            <legend>Estilo:</legend>
+            <label for="idDespojado"></label>
+            <input type="checkbox" name="Despojado" id="idDespojado">Despojado <br>
+            <label for="idCasual"></label>
+            <input type="checkbox" name="Casual" id="idCasual">Casual <br>
+            <label for="idEsporte"></label>
+            <input type="checkbox" name="Esporte" id="idEsporte">Esporte <br>
+            <label for="idSocial"></label>
+            <input type="checkbox" name="Social" id="idSocial"> Social <br>
+            <input type="submit" name="Enviar" value="Enviar">
+            <input type="reset" value="Limpar">
+        </fieldset>
+
+    </form>
+    
+</body>
+</html>

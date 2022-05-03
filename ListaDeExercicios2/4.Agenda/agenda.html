@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de Contato</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <form name="Agenda" method="post" action="agendar">
+        <span><label for="idNome"></label>Nome:</span>
+        <input type="text" name="nome" id="idNome"><br>
+        <span><label for="idEmail"></label>E-mail:</span>
+        <input type="text" name="email" id="idEmail"><br>
+
+        <fieldset>
+            <legend>Agenda</legend>
+            <label for="idTipoEmail">Tipo de E-mail:</label><br>
+            <input type="radio" name="TipoEmail" id="idEmailComercial" value="Comercial">Comercial<br>
+            <label for="idTipoEmail"></label>
+            <input type="radio" name="TipoEmail" id="idEmailPessoal" value="Pessoal">Pessoal<br>
+
+            <select name="cargo" id="idCargo">
+                <option selected disabled value="Escolha">Escolha</option>
+                <optgroup label="Cargos">
+                <option value="Presidente">Presidente</option>
+                <option value="Vice-Presidente">Vice-Presidente</option>
+                <option value="Diretor">Diretor</option>
+                <option value="Gerente">Gerente</option>
+                <option value="Supervisor">Supervisor</option>
+                <option value="Assistente">Assistente</option>
+            </select><br><br>
+            <span><label for="idEmpresa">Empresa:</label></span>
+            <input type="text" name="Empresa" id="idEmpresa"><br>
+            <span><label for="idTelComercial">Tel. Comercial:</label></span>
+            <input type="text" name="TelCom" id="idTelComercial"><br>
+            <span><label for="idTelCelular">Tel. Celular: </label></span>
+            <input type="text" name="telCel" id="idTelCelular"> <br> <br>
+
+            <legend>Tipo do contato: </legend>
+            <label for="idComercial"></label>
+            <input type="checkbox" name="tipoContato" id="idComercial">Comercial<br>
+            <label for="idPessoal"></label>
+            <input type="checkbox" name="tipoContato" id="idPessoal">Pessoal <br>
+            <input type="submit" name="Enviar" value="Enviar">
+            <input type="reset" value="Limpar">
+        </fieldset>
+
+
+    </form>
+</body>
+</html>
