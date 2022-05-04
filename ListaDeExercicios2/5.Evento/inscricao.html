@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição de Evento</title>
+    <style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .estilo1{
+        display: block;
+        width: 100px;
+        float: left;
+    }
+    .estilo2{
+        display: block;
+        width: 60px;
+        float: left;
+    }
+    .estilo3{
+        margin-bottom: 2px;
+    }
+    form{
+        padding: 2px;
+        margin: 2px;
+    }
+    label, input{
+        margin-left: 3px;
+    }
+    </style>
+</head>
+<body>
+    <form name="Evento" method="post" action="Inscrever">
+        <fieldset>
+            <legend>Inscrição</legend>
+        <label for="idNome">Nome:</label>
+        <input class="estilo3" type="text" name="nome" id="idNome"><br>
+        <label for="idEmail">E-mail:</label>
+        <input class="estilo3" type="text" name="email" id="idEmail"><br>
+        <label for="idEmail">Telefone:</label>
+        <input class="estilo3" type="text" name="telefone" id="idTelefone"><br>
+        <label for="idDataNascto">Data de Nascimento:</label>
+        <input class="estilo3" type="date" name="dataNasc" id="idDataNascto"><br>
+        <label for="idEmpresa">Empresa:</label>
+        <input class="estilo3" type="text" name="empresa" id="idEmpresa"><br><br>
+
+        <legend>Cargo</legend>
+        <label for="idCargo"></label>
+        <input class="estilo3" type="radio" name="cargo" id="idCargo" value="Proprietário/Sócio"> Proprietário/Sócio<br>
+        <label for="idCargo"></label>
+        <input class="estilo3" type="radio" name="cargo" id="idCargo" value="Presidencia"> Presidencia<br>
+        <label for="idCargo"></label>
+        <input class="estilo3" type="radio" name="cargo" id="idCargo" value="Diretoria"> Diretoria<br>
+        <label for="idCargo"></label>
+        <input class="estilo3" type="radio" name="cargo" id="idCargo" value="Gerencia"> Gerencia<br>
+        <label for="idCargo"></label>
+        <input class="estilo3" type="radio" name="cargo" id="idCargo" value="Supervisão"> Supervisão<br>
+        <label for="idCargo"></label>
+        <input class="estilo3" type="radio" name="cargo" id="idCargo" value="Outro"> Outro<br><br>
+        <label for="idCidade">Cidade:</label>
+        <input class="estilo3" type="text" name="cidade" id="idCidade"><br>
+        <label for="idUF"></label>
+        <select name="UF" id="idUF">
+            <option selected disabled value="Selecione">Selecione</option>
+            <optgroup label="UF">
+            <option value="SP">SP</option>
+            <option value="RJ">RJ</option>
+            <option value="RS">RS</option>
+            <option value="BA">BA</option>
+            <option value="PE">PE</option>
+            <option value="CE">CE</option>
+        </select><br><br>
+        <legend>Tipo de Inscrição</legend> 
+        <label for="idTipoInscricao"></label>
+        <input class="estilo3" type="radio" name="TipoInscricao" id="idTipoInscricao" value="Pessoa Fisica"> Pessoa Fisica<br>
+        <label for="idTipoInscricao"></label> 
+        <input class="estilo3" type="radio" name="TipoInscricao" id="idTipoInscricao" value="Pessoa Juridica"> Pessoa Juridica<br><br>
+
+        <legend>Como ficou sabendo do evento?</legend>
+        <label for="idComoFicouSabendo"></label>
+        <input type="checkbox" name="ficouSabendo" id="idComoFicouSabendo" value="Revistas"> Revistas<br>
+        <label for="idComoFicouSabendo"></label>
+        <input type="checkbox" name="ficouSabendo" id="idComoFicouSabendo"> Jornais<br>
+        <label for="idComoFicouSabendo"></label>
+        <input type="checkbox" name="ficouSabendo" id="idComoFicouSabendo"> Televisão<br>
+        <label for="idComoFicouSabendo"></label>
+        <input type="checkbox" name="ficouSabendo" id="idComoFicouSabendo"> Internet<br>
+        <label for="idComoFicouSabendo"></label>
+        <input type="checkbox" name="ficouSabendo" id="idComoFicouSabendo"> Patrocinadores<br>
+        <label for="idComoFicouSabendo"></label>
+        <input type="checkbox" name="ficouSabendo" id="idComoFicouSabendo"> Outros<br><br>
+
+        <legend>Qual interesse no evento?</legend>
+        <label for="idQualInteresse"></label>
+        <input type="checkbox" name="qualInteresse" id="idQualInteresse" value="Palestras"> Palestras<br>
+        <label for="idQualInteresse"></label>
+        <input type="checkbox" name="qualInteresse" id="idQualInteresse" value="Workshops"> Workshops<br>
+        <label for="idQualInteresse"></label>
+        <input type="checkbox" name="qualInteresse" id="idQualInteresse" value="Estandes"> Estandes<br>
+        <label for="idQualInteresse"></label>
+        <input type="checkbox" name="qualInteresse" id="idQualInteresse" value="Treinamentos"> Treinamentos<br>
+        <label for="idQualInteresse"></label>
+        <input type="checkbox" name="qualInteresse" id="idQualInteresse" value="Outros"> Outros<br><br>
+
+        <label for="idNomeCrachá">Nome Crachá:</label>
+        <input class="estilo3" type="text" name="nomeCrachá" id="idNomeCrachá"><br>
+
+        <label for="idinfosEmail"></label>
+        <input type="checkbox" name="infoEmail" id="idinfosEmail"> Deseja receber informações por email?<br>
+        <label for="idinfosSMS"></label>
+        <input type="checkbox" name="infoSMS" id="idinfosSMS"> Deseja receber informações por SMS?<br><br>
+        
+        <label for="idComentariosGerais">Comentários Gerais</label><br>
+        <textarea name="comentariosGerais" id="idComentariosGerais" cols="70" rows="10"></textarea><br>
+
+        <input type="submit" name="Enviar" value="Enviar">
+        <input style="margin: 8px;" type="reset" value="Limpar">
+    </fieldset>
+    </form>
+</html>

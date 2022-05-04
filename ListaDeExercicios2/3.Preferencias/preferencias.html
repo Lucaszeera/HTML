@@ -5,7 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preferências</title>
-    <link rel="stylesheet" href="style.css/style.css">
+    <style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    span {
+        display: block;
+        width: 4%;
+        float: left;
+    }
+    legend{
+        padding-top: 15px;
+    }
+    form{
+        padding: 2px;
+        margin: 2px;
+    }
+    label, input{
+        margin-left: 3px;
+    }
+    </style>
 </head>
 <body>
     <form name="Preferências" method="get" action="Cadastrar">
@@ -41,14 +62,15 @@
             <input type="radio" name="manequim" id="idExtraGrande">ExtraGrande <br>
 
             <legend>Estilo:</legend>
-            <label for="idDespojado"></label>
-            <input type="checkbox" name="Despojado" id="idDespojado">Despojado <br>
+            <label for="idDespojado"></label> 
+            <input type="checkbox" name="Despojado" id="idDespojado">Despojado<br>
+            <!--Apesar de eu achar que não faz sentido marcar mais de um estilo com checkbox -->
             <label for="idCasual"></label>
-            <input type="checkbox" name="Casual" id="idCasual">Casual <br>
+            <input type="checkbox" name="Casual" id="idCasual">Casual<br>
             <label for="idEsporte"></label>
-            <input type="checkbox" name="Esporte" id="idEsporte">Esporte <br>
+            <input type="checkbox" name="Esporte" id="idEsporte">Esporte<br>
             <label for="idSocial"></label>
-            <input type="checkbox" name="Social" id="idSocial"> Social <br>
+            <input type="checkbox" name="Social" id="idSocial">Social<br>
             <input type="submit" name="Enviar" value="Enviar">
             <input type="reset" value="Limpar">
         </fieldset>

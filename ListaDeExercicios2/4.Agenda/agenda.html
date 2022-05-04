@@ -5,14 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agenda de Contato</title>
-    <link rel="stylesheet" href="css/style.css">
+    <style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .estilo1{
+        display: block;
+        width: 100px;
+        float: left;
+    }
+    .estilo2{
+        display: block;
+        width: 50px;
+        float: left;
+    }
+    .estilo3{
+        margin-bottom: 2px;
+    }
+    form{
+        padding: 2px;
+        margin: 2px;
+    }
+    </style>
 </head>
 <body>
     <form name="Agenda" method="post" action="agendar">
-        <span><label for="idNome"></label>Nome:</span>
-        <input type="text" name="nome" id="idNome"><br>
-        <span><label for="idEmail"></label>E-mail:</span>
-        <input type="text" name="email" id="idEmail"><br>
+        <label class="estilo2" for="idNome">Nome:</label>
+        <input class="estilo3" type="text" name="nome" id="idNome"><br>
+        <label class="estilo2" for="idEmail">E-mail:</label>
+        <input class="estilo3" type="text" name="email" id="idEmail"><br>
 
         <fieldset>
             <legend>Agenda</legend>
@@ -31,11 +54,11 @@
                 <option value="Supervisor">Supervisor</option>
                 <option value="Assistente">Assistente</option>
             </select><br><br>
-            <span><label for="idEmpresa">Empresa:</label></span>
-            <input type="text" name="Empresa" id="idEmpresa"><br>
-            <span><label for="idTelComercial">Tel. Comercial:</label></span>
-            <input type="text" name="TelCom" id="idTelComercial"><br>
-            <span><label for="idTelCelular">Tel. Celular: </label></span>
+            <label for="idEmpresa">Empresa:</label>
+            <input class="estilo3" type="text" name="Empresa" id="idEmpresa"><br>
+            <label class="estilo1" for="idTelComercial">Tel. Comercial:</label>
+            <input class="estilo3" type="text" name="TelCom" id="idTelComercial"><br>
+            <labelestilo1" for="idTelCelular">Tel. Celular: </label>
             <input type="text" name="telCel" id="idTelCelular"> <br> <br>
 
             <legend>Tipo do contato: </legend>

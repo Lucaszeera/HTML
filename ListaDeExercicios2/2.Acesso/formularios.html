@@ -5,17 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulários</title>
-    <link rel="stylesheet" href="css/style.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        fieldset label {
+            width: 4%;
+            float: left;
+        }
+        .estilo1{
+            margin: 2px;
+        }
+        .estilo2{
+            margin-top: 3px;
+            margin-left: 4%;
+        }
+    </style>
 </head>
 <body>
     <form name="Acesso" method="get" action="logar">
-        <fieldset>
+        <fieldset class="estilo1">
             <legend><b>Log-in de usuario</b></legend>
             <label for="idUsuario">Usuario:</label>
             <input type="text" name="Usuario" id="idUsuario"><br>
             <label for="idSenha">Senha:</label>
             <input type="password" maxlength="12" name="Senha" id="idSenha"><br>
-            <input type="submit" name="Enviar" value="Enviar">
+            <input class="estilo2" type="submit" name="Enviar" value="Enviar">
             <input type="reset" value="Limpar">
         </fieldset>
     </form>
