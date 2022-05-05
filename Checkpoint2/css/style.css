@@ -1,0 +1,37 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.header1{
+    background-color: rgb(163, 163, 204);
+    height: 120px;
+}
+img{
+    max-width: 120px;
+    float: left;
+    position: absolute;
+}
+header h1{
+    color: white;
+    text-shadow: 1px 1px 5px black;
+    text-align: center;
+}
+nav{
+    background-color: gray;
+}
+nav ul li{
+    display: inline-block;
+}
+main{
+    background-color: yellow;
+    height: 1000px;
+    width: 60%;
+    float: left;
+}
+aside{
+    background-color: blue;
+    height: 500px;
+    width: 40%;
+    float: left;
+}
