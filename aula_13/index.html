@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="titulo">Aula JavaScript</title>
+</head>
+<body>
+    <h1>Aula de HTML</h1>
+
+    <h2>Exemplo por classname</h2>
+
+    <p>primeiro colocado: <span class="corredor"></span></p>
+    <p>Segundo colocado: <span class="corredor"></span></p>
+    <p>Terceiro colocado: <span class="corredor"></span></p>
+
+    <label for="novo">Novo Classificado: </label>
+    <input type="text" id="novo"> <br>
+    <label for="posicao">Posição: </label>
+    <input type="text" id="posicao" min="1" max="3">
+    <button onclick="inserir()">Inserir</button>
+
+    <h2>Exemplo por TagName</h2>
+
+    <ul>
+        <li>Janeiro</li>
+        <li>Fevereiro </li>
+        <li>Março</li>
+        <li>Abril</li>
+        <li>Maio</li>
+    </ul>
+
+    <label for="numero">Escolha um mês: </label>
+    <input type="number" id="numero" min="1" max="5">
+    <button onclick="mostrar()">Mostrar</button>
+    <p>Mês escolhido: <span id="resultado"></span></p>
+    
+
+    <h2>Trabalhando com eventos</h2>
+
+    <button onclick="alert('Mensagem do botão 1')">Botão 1</button>
+    <button id="btn2">Botão 2</button>
+    <button id="btn3">Botão 3</button>
+    <button id="btn4">Botão 4</button>
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
