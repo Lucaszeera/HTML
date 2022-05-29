@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    min-height: 400px;
+    background-color: #ccf;
+
+    /* configurações em conjunto, relação do pai com os filhos */
+    display: flex;
+    flex-direction: column;
+    /* row / column */
+    flex-wrap: wrap;
+    /* nowrap / wrap*/
+    justify-content: flex-start; /* eixo: x */
+    /*flex start / flex end/ center / space-between / space around / space-evenly*/
+    align-items: stretch; /* eixo: y */
+    /* stretch / flex-start / flex-end / baseline*/
+    align-content: stretch;
+    /*  stretch / flex-start / flex-end / center / space-between / space-around */
+
+}
+.item{
+    width: 50px;
+    background-color: gray;
+    margin: 3px;
+    flex-grow: 1;
+
+}
+.div1{
+    /*  order: 1;  */
+    /*  flex-grow: 1;  */
+    /*  flex-shrink: 0;  */
+    /*  flex-basis: 200px;  */
+    /*  -flex: 1, 0, 200px;  */
+    align-self: center;
+
+}
+.div2{
+  padding-top: 30px;
+   /*order: 0;*/
+  /* flex-grow: 2;*/
+
+
+}
+.div3{
+    order: 2;
+    /*flex-grow: 3;*/
+
+}
